@@ -1,0 +1,17 @@
+[user]
+	name = James Stephens
+	email = james.stephens@oforce.com
+[credential]
+	helper = osxkeychain
+[core]
+	editor = code --wait
+	autocrlf = false
+	excludesfile = /Users/jamesstephens/.gitignore
+	eol = lf
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
